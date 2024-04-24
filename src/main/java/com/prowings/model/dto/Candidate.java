@@ -1,5 +1,8 @@
 package com.prowings.model.dto;
 
+import java.util.List;
+import java.util.Set;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -8,16 +11,13 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Employee {
+public class Candidate {
 
-	private String firstName;
-	private String age;
-	private String address;
-	private String height;
-	private String mode;
-	private String birthDate;
+	private int id;
+	private String completeName;
+	private AddressDTO[] corruspondance;
 
 }

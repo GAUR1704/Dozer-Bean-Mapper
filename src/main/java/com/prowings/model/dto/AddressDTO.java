@@ -1,6 +1,7 @@
 package com.prowings.model.dto;
 
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -8,16 +9,14 @@ import lombok.ToString;
 
 @Getter
 @Setter
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class Employee {
+@EqualsAndHashCode
+public class AddressDTO {
 
-	private String firstName;
-	private String age;
-	private String address;
-	private String height;
-	private String mode;
-	private String birthDate;
+	private int pincode;
+	private String cityName;
+	private String country;
 
 }
